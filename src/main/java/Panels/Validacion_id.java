@@ -53,13 +53,14 @@ public class Validacion_id extends JPanel {
 		btnCompilar.setBounds(397, 517, 123, 21);
 		add(btnCompilar);
 		
+		//===================================ACCIONES DEL BOTON PARA EJECUTAR LA COMPILACION=================================
 		btnCompilar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
             	texto=textArea.getText();
             	Validacion validacion = new Validacion();
             	validacion.dividir_filas(texto);
-            	//validacion.Validar_id(texto);
+            	validacion.dividir_items();
             	}
         });
 		
